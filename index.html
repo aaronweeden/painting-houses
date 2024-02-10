@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<!-- Author: Aaron Weeden, Shodor Education Foundation, 2013–2024 -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Painting Houses in Parallel</title>
+        <script src="painting-houses.js"></script>
+    </head>
+
+    <!-- BODY -->
+    <body>
+
+        <!-- H1 -->
+        <h1>
+            Painting Houses in Parallel
+        </h1>
+
+        <!-- TABLE -->
+        <table id="table" border="1" style="text-align: right;">
+            <tr id="trTime">
+                <td>
+                    Time Step:
+                </td>
+            </tr>
+        </table>
+
+        <!-- SELECTS -->
+        <div>
+            <div style="display: inline-block; margin-right: 250px;">
+                <div>
+                    Work size:
+                    <select id="sWorkSize" onchange="update();">
+                    </select>
+                    houses
+                </div>
+                <div>
+                    Number of parallel painters:
+                    <select id="sNumPainters" onchange="update();">
+                    </select>
+                </div>
+            </div>
+            <div style="display: inline-block;">
+                <div>
+                    Max time:
+                    <select id="sMaxTime" onchange="update();">
+                    </select>
+                    time steps
+                </div>
+                <div>
+                    Painter capacity:
+                    <select id="sMaxSpace" onchange="update();">
+                    </select>
+                    houses
+                </div>
+            </div>
+        </div>
+
+        <!--<div>Speedup: <span id="speedup"></span>x</div>-->
+
+        <!-- HOUSE IMAGE -->
+        <img id="iHouse" src="house.gif" width="0" height="0" alt="House"/>
+
+    </body>
+
+</html>
